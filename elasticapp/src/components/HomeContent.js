@@ -12,6 +12,7 @@ import {
 import Sidebar from "./Sidebar";
 import CloudIcon from "@mui/icons-material/Cloud";
 import Spain from "./spain.png";
+import UK from "./uk.png";
 
 function HomeContent() {
   const loremIpsum =
@@ -142,10 +143,28 @@ function HomeContent() {
                         color="primary"
                         variant="outlined"
                       />
-                      <Chip label="format2" color="primary" />
-                      <Chip label="format3" />
-                      <Chip label="format4" />
-                      <Chip label="Longer text format" />
+                      <Chip
+                        label="format2"
+                        color="primary"
+                        onClick={() => {
+                          console.log("hello i'm chip2");
+                        }}
+                      />
+                      <Chip
+                        label="format3"
+                        color="primary"
+                        variant="outlined"
+                      />
+                      <Chip
+                        label="format4"
+                        color="primary"
+                        variant="outlined"
+                      />
+                      <Chip
+                        label="Longer text format"
+                        color="primary"
+                        variant="outlined"
+                      />
                     </Box>
                   </Box>
                   <Box
@@ -240,10 +259,12 @@ function HomeContent() {
                         fontSize: "1.3rem",
                         fontWeight: "bold",
                         marginInline: 4,
+                        marginRight: 1,
                       }}
                     >
-                      Language: Spanish
+                      Language:
                     </Typography>
+                    <img style={{ width: "30px", height: "30px" }} src={UK} />
                   </Box>
                 </CardContent>
               </CardActionArea>
